@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Front page</title>
+        <link rel = "stylesheet" href = "front.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body class = "body">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href = "SEO_Success_Template 2021.docx">Download Resume</a>
+            <a href="#contactInfo">Contact</a>
+            <a href = "http://www.linkedin.com/in/idris-adeboyejo-9b51601a0">Linkedln</a>
+            <a href = "#projects">Projects</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+
+
+        <div class = "container">
+            <p class="intro">Aspiring Software developer</p>
+            <h1 class = "name">Idris Adeboyejo</h1>
+            <p class = "third">As a computer science major, it's imperative that we seek to continue to develop new ideas. Therefore, I have worked towards creating a space for people to learn more about me.
+              Browse my website to get to know me.
+            </p>
+            <a class = "aboutMeButton" href = "#aboutMe">About Me</a>
+        </div>
+        
+        
+        <div class = "columns">
+            
+            <div class = "interests">
+                <h3>Interests</h3>
+                <ul>
+                    <li>Cryptocurrency</li>
+                    <li>Software development</li>
+                    <li>Music</li>
+                    <li>Sports</li>
+                </ul>
+            </div>
+
+            <div id = "aboutMe">
+                <h3>About Me</h3>
+                <p>I am curently a junior and a computer science student
+                    at CUNY Brooklyn College. I aspire to be a software
+                    developer because I enjoy solving problems and learning
+                    simultaneously. I code in Java and have a few experiences
+                    using Javascript, HTML, CSS, and React. 
+                    I have participated in different internships
+                    including occupying a data analyst role at the Office of the
+                    New York City Public Advocate for 5 weeks. I also have experience
+                    working with information systems. 
+                    By June 6 2022, I will be joining Harborvest Partners in Boston
+                    for 10 weeks as a Technical Support Intern where 
+                    I would be able to gain so much knowledge while I 
+                    work alongside skillful and intelligent engineers.
+                    As an upbeat, self-motivated team player with excellent
+                    communication skills, I look forward to acquiring and applying
+                    skills when needed while I hope to have both the skill set 
+                    and professional background necessary to have an exciting
+                    future in the tech world. During my free time, I try my best to 
+                    sleep as much as I can, watch movies, and listen to music.
+                    Scroll down to take a look at some of my projects.</p>
+            </div>
+        </div>
+        
+        
+        <div id = "projects">
+            <h2 class = "projectHeader">Projects</h2>
+            <div class = "projectLists">
+                <a href = "https://distracted-minsky-f6af45.netlify.app/" target = "_blank" class = "project1">We Found</a>
+                <a href = "https://regal-scone-a51ea1.netlify.app/" target = "_blank" class = "project2">Airbnb experience clone</a>
+                <a href = "https://wondrous-swan-9bfdab.netlify.app" target = "_blank" class = "project3">Meme Generator</a>
+              </div>
+
+              <div class = "apps">
+              <p class = "wefound">I participated on the frontend development of this application. Me and other
+                brilliant developers have created this app to allow users to search for and compare grocery prices
+                with zipcodes of their choice.
+                Click on the link above, create an account and explore!
+              </p>
+              <p class = "clone">
+                I believe that practice aids improvement. In sharpening my React skills, I created this
+                Airbnb experience clone. 
+              </p>
+              <p class = "memegen">
+                Here is another React project. This is a meme/gif generator. Users are allowed to search for gifs
+                of their choice, including trending and random ones. Click above to try the meme generator out.
+                Everybody loves gifs!
+              </p>
+            </div>
+        </div>
+        
+        <div id = "contactInfo">
+            <h2 class = "message">CONTACT</h2>
+            <p class = "message">Let's get in touch. Send me a message.</p>
+
+            <section class = "map">
+                <span><img src = "mapMarker.png" class = "mapMarker"/></span>
+                <span class = "nyc">Brooklyn, New York</span>
+            </section>
+            <br>
+
+            <section class = "phone">
+                <span><img src = "telephone.png" class = "phone--image"/></span>
+                <span class = "phoneNumber">Phone: (646) 975-0251</span>
+            </section> 
+            <br>
+
+            <section class = "email">
+                <span><img src = "envelope.png" class = "envelope--image"/></span>
+                <span class = "email-address">idrisadeboyejo@gmail.com</span>
+            </section>
+        </div>
+        
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+    </body>
+</html>
